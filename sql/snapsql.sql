@@ -1,0 +1,9 @@
+ALTER DATABASE amoreno28 CHARACTER SET UTF8 COLLATE utf_unicode_ci;
+
+DROP TABLE IF EXISTS comment;
+
+CREATE TABLE comment (
+	commentId BINARY(16) NOT NULL,
+	commentDateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	commentText VARCHAR(128)
+)
